@@ -1,0 +1,166 @@
+@charset "UTF-8";
+.header {
+  margin: 0.1rem;
+  background-color: #20b2aa;
+  font-size: 1.5rem;
+  border-bottom: solid 2px #A4508B;
+  border-left: solid 2px #A4508B;
+  border-right: solid 2px #A4508B;
+}
+.header .logo {
+  height: 6rem;
+}
+.header ul {
+  list-style: none;
+  text-align: end;
+}
+.header ul li {
+  display: inline-block;
+  margin: 0.2rem 0.2rem;
+  padding: 0.2rem;
+}
+.header ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #F0DCCA;
+  text-decoration: none;
+  border: #F0DCCA solid 0.1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header ul li a:hover {
+  color: white;
+  background-color: #EFC7E5;
+  transition: 1s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F0DCCA;
+}
+body h1 {
+  color: rgb(236, 69, 96);
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Dancing Script", cursive;
+  margin: 1rem 1rem;
+}
+body h2 {
+  color: rgb(236, 69, 96);
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "Dancing Script", cursive;
+  margin: 1rem 1rem;
+}
+body h3 {
+  color: rgb(236, 69, 96);
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Dancing Script", cursive;
+  margin: 1rem 1rem;
+}
+body p {
+  color: #696D7D;
+  text-align: justify;
+  font-size: 1.5rem;
+  margin: 2rem 2rem;
+}
+body p .subrayado {
+  text-decoration: underline;
+}
+
+footer {
+  margin: 0.1rem 0.1rem;
+  padding: 0;
+  border-top: solid 1px #A4508B;
+  height: auto;
+}
+footer .pie {
+  font-size: 1.1rem;
+  color: #A4508B;
+  text-align: center;
+  margin: 0.1rem 0.1rem;
+}
+
+.row {
+  row-gap: 2rem;
+}
+.row .card {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  min-height: 28em;
+  color: #A4508B;
+  background-color: #20b2aa;
+  row-gap: 1rem;
+}
+.row .card-title {
+  font-size: 2rem;
+}
+.row .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  color: #A4508B;
+}
+.row .card:hover .content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+  color: #A4508B;
+}
+.row .back {
+  transform: rotateY(180deg);
+  color: #A4508B;
+}
+.row .front,
+.row .back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  color: #A4508B;
+}
+.row .paragraph-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 1rem;
+  color: #A4508B;
+}
+
+.reviews-section {
+  row-gap: 1rem;
+  text-align: center;
+}
+.reviews-section .cartas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.reviews-section .cartas .reseña {
+  text-align: center;
+  border: #A4508B 1px solid;
+  border-radius: 5px;
+  row-gap: 1rem;
+  color: #20b2aa;
+  height: 25rem;
+  width: 30rem;
+  margin: 1.5rem;
+}
+.reviews-section .cartas .reseña .nombre {
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=estilo.css.map */

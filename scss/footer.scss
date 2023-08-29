@@ -1,0 +1,13 @@
+footer {
+	margin: 0.1rem 0.1rem;
+	padding: 0;
+	border-top: solid 1px $violeta;
+	height: auto;
+
+	.pie {
+		font-size: 1.1rem;
+		color: $violeta;
+		text-align: center;
+		margin: 0.1rem 0.1rem;
+	}
+}

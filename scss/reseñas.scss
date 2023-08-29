@@ -1,0 +1,26 @@
+.reviews-section {
+    row-gap: 1rem;
+    text-align: center;
+
+    .cartas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .reseña {
+            text-align: center;
+            border: $violeta 1px solid;
+            border-radius: 5px;
+            row-gap: 1rem;
+            color: $turquesa;
+            height: 25rem;
+            width: 30rem;
+            margin: 1.5rem;
+
+            .nombre {
+                font-size: 2rem;
+            }
+        }
+    }
+}

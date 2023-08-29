@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $rosaBebe;
+
+    h1 {
+        color: $pink;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Dancing Script', cursive;
+        margin: 1rem 1rem;
+    }
+
+    h2 {
+        color: $pink;;
+        text-align: center;
+        font-size: 3.5rem;
+        font-family: 'Dancing Script', cursive;
+        margin: 1rem 1rem;
+    }
+
+    h3 {
+        color: $pink;;
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: 'Dancing Script', cursive;
+        margin: 1rem 1rem;
+    }
+
+    p {
+        color:$lila;
+        text-align: justify;
+        font-size: 1.5rem;
+        margin: 2rem 2rem;
+
+        .subrayado {
+            text-decoration: underline;
+        }
+    }
+}

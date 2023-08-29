@@ -1,0 +1,38 @@
+.header {
+    margin: 0.1rem;
+    background-color: $turquesa;
+    font-size: 1.5rem;
+    border-bottom: solid 2px $violeta;
+    border-left: solid 2px $violeta;
+    border-right: solid 2px $violeta;
+
+    .logo {
+        height: 6rem;
+    }
+
+    ul {
+        list-style: none;
+        text-align: end;
+
+        li {
+            display: inline-block;
+            margin: 0.2rem 0.2rem;
+            padding: 0.2rem;
+
+            a {
+                font-family: Arial, Helvetica, sans-serif;
+                color: $rosaBebe;
+                text-decoration: none;
+                border: $rosaBebe solid 0.1rem;
+                background-color: transparent;
+                cursor: pointer;
+
+                &:hover {
+                    color: white;
+                    background-color: #EFC7E5;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+}
