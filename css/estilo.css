@@ -96,6 +96,7 @@ footer .pie {
   color: #A4508B;
   background-color: #20b2aa;
   row-gap: 1rem;
+  border: 2px solid #A4508B;
 }
 .row .card-title {
   font-size: 2rem;
@@ -108,6 +109,11 @@ footer .pie {
   transition: transform 1s;
   transform-style: preserve-3d;
   color: #A4508B;
+}
+.row .content .fotoA {
+  width: 5rem;
+  height: 24rem;
+  overflow: hidden;
 }
 .row .card:hover .content {
   transform: rotateY(180deg);
@@ -156,11 +162,88 @@ footer .pie {
   row-gap: 1rem;
   color: #20b2aa;
   height: 25rem;
-  width: 30rem;
+  width: 25rem;
   margin: 1.5rem;
 }
 .reviews-section .cartas .reseña .nombre {
   font-size: 2rem;
+}
+
+.contacto .formContainer {
+  width: 35%;
+  height: 40%;
+  border: #A4508B 2px solid;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  margin: 1% 33%;
+  overflow: auto;
+}
+.contacto .formContainer form {
+  margin: 5%;
+}
+.contacto .formContainer form label {
+  display: block;
+}
+.contacto .formContainer form textarea,
+.contacto .formContainer form .text {
+  justify-content: center;
+  align-content: center;
+  font-size: 1rem;
+  border: 1px solid #20b2aa;
+}
+.contacto .formContainer form textarea:hover,
+.contacto .formContainer form .text:hover {
+  font-size: 1.1rem;
+  border: 2px solid #20b2aa;
+  transition: 0.2s;
+}
+.contacto .formContainer form input {
+  cursor: pointer;
+}
+.contacto .formContainer form label,
+.contacto .formContainer form input,
+.contacto .formContainer form .formulario {
+  font-size: 1.3rem;
+  color: #A4508B;
+}
+.contacto .formContainer form .opciones {
+  font-size: 1.2rem;
+  padding-left: 1%;
+  padding-right: 1%;
+  color: #20b2aa;
+}
+.contacto .formContainer form .boton {
+  background-color: transparent;
+  border: #20b2aa solid 1px;
+  width: 40%;
+  margin: 1%;
+  border-radius: 50%;
+  color: #20b2aa;
+}
+.contacto .formContainer form .boton:hover {
+  background-color: #20b2aa;
+  color: white;
+  transition: 2s;
+}
+
+/*Versión tablet*/
+@media (min-width: 500px) and (max-width: 900px) {
+  .formContainer {
+    width: 60%;
+    height: 50%;
+    margin: 1% 20%;
+    overflow: scroll;
+  }
+}
+/*Versión celu*/
+@media (max-width: 500px) {
+  .formContainer {
+    width: 80%;
+    height: 60%;
+    margin: 1% 10%;
+    overflow: scroll;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

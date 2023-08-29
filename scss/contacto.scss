@@ -1,0 +1,90 @@
+.contacto {
+    .formContainer {
+        width: 35%;
+        height: 40%;
+        border: $violeta 2px solid;
+        text-align: center;
+        border-radius: 0.5rem;
+        padding: 0.3rem;
+        margin: 1% 33%;
+        overflow: auto;
+
+        form {
+            margin: 5%;
+
+            label {
+                display: block;
+            }
+
+            textarea,
+            .text {
+                justify-content: center;
+                align-content: center;
+                font-size: 1rem;
+                border: 1px solid $turquesa;
+
+                &:hover {
+                    font-size: 1.1rem;
+                    border: 2px solid $turquesa;
+                    transition: 0.2s;
+                }
+            }
+
+            input {
+                cursor: pointer;
+            }
+
+            label,
+            input,
+            .formulario {
+                font-size: 1.3rem;
+                color: $violeta;
+            }
+
+            .opciones {
+                font-size: 1.2rem;
+                padding-left: 1%;
+                padding-right: 1%;
+                color: $turquesa;                
+            }
+
+            .boton {
+                background-color: transparent;
+                border: $turquesa solid 1px;
+                width: 40%;
+                margin: 1%;
+                border-radius: 50%;
+                color: $turquesa;
+
+                &:hover {
+                    background-color: $turquesa;
+                    color: white;
+                    transition: 2s;
+                }
+            }
+        }
+    }
+}
+
+/*Versión tablet*/
+@media (min-width:500px) and (max-width: 900px) {
+
+    .formContainer {
+        width: 60%;
+        height: 50%;
+        margin: 1% 20%;
+        overflow: scroll;
+    }
+}
+
+
+/*Versión celu*/
+@media (max-width: 500px) {
+
+    .formContainer {
+        width: 80%;
+        height: 60%;
+        margin: 1% 10%;
+        overflow: scroll;
+    }
+}

@@ -9,6 +9,7 @@
             color: $violeta;
             background-color: $turquesa;
             row-gap: 1rem;
+            border: 2px solid $violeta;
         }
 
         .card-title {
@@ -23,6 +24,12 @@
             transition: transform 1s;
             transform-style: preserve-3d;
             color: $violeta;
+
+            .fotoA {
+                width: 5rem;
+                height: 24rem;
+                overflow: hidden;
+            }
         }
 
         .card:hover .content {
